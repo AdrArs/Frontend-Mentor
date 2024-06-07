@@ -33,46 +33,132 @@ html {
 body {
   font-size: var(--font-size);
   font-family: var(--outfit);
-  border: 1px solid purple;
   background-color: var(--neutral-White);
   width: min(100%, 900px);
+  margin: 0 auto;
   
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   font-family: var(--young-serif);
   font-size: 2rem;
+  color: var(--neutral-Dark-Charcoal);
+  font-weight: 500;
 }
 
 h2 {
   font-family: var(--young-serif);
+  color: var(--primary-Nutmeg);
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--primary-Dark-Raspberry);
+  margin-bottom: 1rem;
+}
+
+p, li {
+  color: var(--neutral-Wenge-Brown);
+}
+
+span {
+  color: var(--neutral-Wenge-Brown);
+  font-weight: 700;
+}
+
+ol {
+  padding-inline-start: 1.5rem;
+}
+
+ul {
+  padding-inline-start: 1.5rem;
+  list-style-type: square;
+
+}
+.hero__preparation li::marker {
+  color: var(--primary-Dark-Raspberry);
+
+}
+
+.ingredients li::marker {
+  color: var(--primary-Nutmeg);
+}
+
+ol li::marker {
+  color: var(--primary-Nutmeg);
+  font-weight: 800;
 }
 
 .hero {
-  width: min(900px, 100% - 2rem);
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  width: min(800px, 100% - 3rem);
 }
 
 .hero__logo {
-  width: min(100% - 2rem, 720px); 
+  width: 100%; 
   border-radius: 10px;
-  border: 1px solid blue;
   margin-bottom: 2rem;
 }
 
 .hero p {
   margin: 1.5rem 0  1.5rem 0;
+  line-height: 1.5;
 }
 
 .hero__preparation {
-  border: 1px solid green;
-  width: max(90%, 375px);
+  width: 100%;
   padding: 1.5rem;
   background-color: var(--neutral-Rose-White);
+  border-radius: 1rem;
+}
+
+.hero__preparation li {
+  line-height: 2;
+}
+
+.ingredients {
+  width: min(800px, 100% - 3rem);
+} 
+
+.ingredients li {
+  line-height: 2;
+}
+
+.instructions {
+  width: min(800px, 100% - 3rem);
+}
+
+.instructions li p {
+  line-height: 1.5;
+}
+
+.instructions li {
+  line-height: 2.5;
+}
+
+.nutrition {
+  width: min(800px, 100% - 3rem);
+}
+
+.nutrition__table th {
+  text-align: left;
+  padding-inline-start: 30px;
+  padding-inline-end: 250px;
+  padding-top: 1.5rem;
+}
+
+.nutrition__table td {
+  padding-top: 1.5rem;
+}
+
+.table__line {
+  border-bottom: 1.5px solid var(--neutral-Light-Grey);
 }
 
 

@@ -86,6 +86,12 @@ button {
   border-radius: 0.5rem;
 }
 
+button:hover {
+  background-color: var(--primary-Green);
+  color: var(--neutral-Dark-Grey);
+  cursor: pointer;
+}
+
 .hero__content p:nth-child(2) {
   color: var(--primary-Green);
   font-weight: 500;

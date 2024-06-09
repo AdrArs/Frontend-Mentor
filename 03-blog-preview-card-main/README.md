@@ -1,4 +1,4 @@
 # Sample Image 
 
-![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Blog preview card coding challenge](./design/active-states.jpg)
 

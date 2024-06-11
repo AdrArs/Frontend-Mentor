@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* colors */
+--primary-Dark-cyan: hsl(158, 36%, 37%);
+--primary-Cream: hsl(30, 38%, 92%);
+
+--primary-Very-dark-blue: hsl(212, 21%, 14%);
+--primary-Dark-grayish-blue: hsl(228, 12%, 48%);
+--primary-White: hsl(0, 0%, 100%);
+
+--font-size-paragraph: 14px;
+
+--font-Fraunces: "Fraunces", serif;
+--font-Montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-Cream);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+h1 {
+  font-family: var(--font-Fraunces);
+  color: var(--primary-Very-dark-blue);
+  font-size: 35px;
+  line-height: 1;
+}
+
+h2 {
+  font-family: var(--font-Montserrat);
+  color: var(--primary-Dark-grayish-blue);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: var(--font-size-paragraph);
+}
+
+p {
+  font-family: var(--font-Montserrat);
+  color: var(--primary-Dark-grayish-blue);
+  font-size: var(--font-size-paragraph);
+  font-weight: 500;
+
+}
+
+span {
+  color: var(--primary-Dark-cyan);
+  font-size: 32px;
+  font-family: var(--font-Fraunces);
+  font-weight: 700;
+}
+
+s {
+  color: var(--primary-Dark-grayish-blue);
+  font-family: var(--font-Fraunces);
+  font-size: 14px;
+}
+
+.content__prices {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.content__paragraph {
+  padding-right: 5px;
+  line-height: 1.5;
+}
+
+.image {
+  height: 100%;
+  width: 300px;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px 0 0 10px;
+}
+
+.content {
+  width: 300px;
+  height: 100%;
+  background-color: var(--primary-White);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 0 10px 10px 0;
+}
+
+.content__button {
+  background-color: var(--primary-Dark-cyan);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+.content__button p {
+  color: var(--primary-White);
+}
